@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e293b, #334155, #475569);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.info {
+    background: linear-gradient(160deg, #0f172a, #1e293b);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h1 {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+}
+
+.card {
+    padding: 40px;
+    background: #f8fafc;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #475569;
+    box-shadow: 0 0 0 3px rgba(71, 85, 105, 0.25);
+}
+
+button {
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #475569, #1e293b);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.4);
+}
+
+.resultado {
+    margin-top: 25px;
+    display: grid;
+    gap: 10px;
+}
+
+.resultado p {
+    background: #e2e8f0;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+#total {
+    background: #dbeafe;
+    color: #1e3a8a;
+    border-left: 6px solid #2563eb;
+    font-size: 17px;
+}
+
+a {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+    background: #1e293b;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #334155;
+}
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        padding: 30px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+}

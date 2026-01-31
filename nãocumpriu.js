@@ -11,7 +11,7 @@ document.querySelector("#btn").addEventListener("click", function(){
         alert(`Os dias trabalhados não podem ser maior que 31`)
         saldosalario = 0
     }
-
+    
     let FGTS = (salario * 0.08) * mesestrabalhados;
     let resultfgts_porcentagem = FGTS * 0.4 + FGTS;
     let ferias = ((salario / 12) * mesdesligado) + (salario * 0.33) ;

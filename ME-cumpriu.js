@@ -9,8 +9,8 @@ document.querySelector("#btn").addEventListener("click", function () {
     let saldosalario = salario / 30 * dias_trabalhados
     let total = FGTS + ferias + salario
 
-    let saida_saldo_salario = document.querySelector("#saldosalario").innerHTML = `SALDO SALÁRIO: R$${saldosalario.toFixed}`
-    let saida_ferias = document.querySelector("#ferias").innerHTML = `FERIAS: R$${ferias.toFixed}`
-    let saida_fgts = document.querySelector("#fgts").innerHTML = `FGTS: R$${FGTS.toFixed}`
-    let saida_total = document.querySelector("#total").innerHTML = `TOTAL: R$${total.toFixed}`
+    let saida_saldo_salario = document.querySelector("#saldosalario").innerHTML = `SALDO SALÁRIO: R$${saldosalario.toFixed(2)}`
+    let saida_ferias = document.querySelector("#ferias").innerHTML = `FERIAS: R$${ferias.toFixed(2)}`
+    let saida_fgts = document.querySelector("#fgts").innerHTML = `FGTS: R$${FGTS.toFixed(2)}`
+    let saida_total = document.querySelector("#total").innerHTML = `TOTAL: R$${total.toFixed(2)}`
 })

@@ -13,10 +13,10 @@ document.querySelector("#btn").addEventListener("click", function () {
     }
 
     let FGTS = ((salario * 0.08) * mesestrabalhados)
-    let resultfgts_porcentagem = FGTS * 0.4 + FGTS;
+    let resultfgts_porcentagem = salario * 0.4 + FGTS;
     let ferias = ((salario / 12) * mesdesligado) + (salario * 0.33);
     let saldosalario = salario / 30 * dias_trabalhados
-    let total = FGTS + ferias + saldosalario
+    let total = resultfgts_porcentagem + ferias + saldosalario
 
     let saida_saldo_salario = document.querySelector("#saldosalario").innerHTML = `SALDO SALÁRIO: R$${Math.round(saldosalario * 100) / 100}`
     let saida_ferias = document.querySelector("#ferias").innerHTML = `FERIAS: R$${Math.round(ferias * 100) / 100}`
